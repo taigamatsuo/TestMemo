@@ -19,10 +19,13 @@
 		6610915A2353118F006D7B6B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661091592353118F006D7B6B /* InfoViewController.swift */; };
 		6610915C23531217006D7B6B /* kid_seikaku_kachiki_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6610915B23531217006D7B6B /* kid_seikaku_kachiki_boy.png */; };
 		6610915E23531226006D7B6B /* calender_himekuri.png in Resources */ = {isa = PBXBuildFile; fileRef = 6610915D23531226006D7B6B /* calender_himekuri.png */; };
+		66109160235445F5006D7B6B /* アプリコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 6610915F235445F5006D7B6B /* アプリコン.png */; };
+		66109162235447A2006D7B6B /* ノートアイコン120.png in Resources */ = {isa = PBXBuildFile; fileRef = 66109161235447A2006D7B6B /* ノートアイコン120.png */; };
+		66109164235447B0006D7B6B /* ノート180.png in Resources */ = {isa = PBXBuildFile; fileRef = 66109163235447B0006D7B6B /* ノート180.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		661090EE2352E10A006D7B6B /* TestMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661090EE2352E10A006D7B6B /* EXMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EXMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		661090F12352E10A006D7B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		661090F32352E10A006D7B6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		661090F52352E10A006D7B6B /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		661091592353118F006D7B6B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6610915B23531217006D7B6B /* kid_seikaku_kachiki_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kid_seikaku_kachiki_boy.png; sourceTree = "<group>"; };
 		6610915D23531226006D7B6B /* calender_himekuri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calender_himekuri.png; sourceTree = "<group>"; };
+		6610915F235445F5006D7B6B /* アプリコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリコン.png"; sourceTree = "<group>"; };
+		66109161235447A2006D7B6B /* ノートアイコン120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ノートアイコン120.png"; sourceTree = "<group>"; };
+		66109163235447B0006D7B6B /* ノート180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ノート180.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,7 @@
 		661090EF2352E10A006D7B6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				661090EE2352E10A006D7B6B /* TestMemo.app */,
+				661090EE2352E10A006D7B6B /* EXMemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +74,9 @@
 		661090F02352E10A006D7B6B /* TestMemo */ = {
 			isa = PBXGroup;
 			children = (
+				66109163235447B0006D7B6B /* ノート180.png */,
+				66109161235447A2006D7B6B /* ノートアイコン120.png */,
+				6610915F235445F5006D7B6B /* アプリコン.png */,
 				6610915D23531226006D7B6B /* calender_himekuri.png */,
 				6610915B23531217006D7B6B /* kid_seikaku_kachiki_boy.png */,
 				661090F12352E10A006D7B6B /* AppDelegate.swift */,
@@ -88,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		661090ED2352E10A006D7B6B /* TestMemo */ = {
+		661090ED2352E10A006D7B6B /* EXMemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 661091022352E10C006D7B6B /* Build configuration list for PBXNativeTarget "TestMemo" */;
+			buildConfigurationList = 661091022352E10C006D7B6B /* Build configuration list for PBXNativeTarget "EXMemo" */;
 			buildPhases = (
 				661090EA2352E10A006D7B6B /* Sources */,
 				661090EB2352E10A006D7B6B /* Frameworks */,
@@ -100,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = TestMemo;
+			name = EXMemo;
 			productName = TestMemo;
-			productReference = 661090EE2352E10A006D7B6B /* TestMemo.app */;
+			productReference = 661090EE2352E10A006D7B6B /* EXMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 661090E92352E10A006D7B6B /* Build configuration list for PBXProject "TestMemo" */;
+			buildConfigurationList = 661090E92352E10A006D7B6B /* Build configuration list for PBXProject "EXMemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				661090ED2352E10A006D7B6B /* TestMemo */,
+				661090ED2352E10A006D7B6B /* EXMemo */,
 			);
 		};
 /* End PBXProject section */
@@ -143,10 +152,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66109164235447B0006D7B6B /* ノート180.png in Resources */,
 				661090FE2352E10C006D7B6B /* LaunchScreen.storyboard in Resources */,
 				661090FB2352E10C006D7B6B /* Assets.xcassets in Resources */,
+				66109160235445F5006D7B6B /* アプリコン.png in Resources */,
 				6610915E23531226006D7B6B /* calender_himekuri.png in Resources */,
 				6610915C23531217006D7B6B /* kid_seikaku_kachiki_boy.png in Resources */,
+				66109162235447A2006D7B6B /* ノートアイコン120.png in Resources */,
 				661090F92352E10A006D7B6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		661090E92352E10A006D7B6B /* Build configuration list for PBXProject "TestMemo" */ = {
+		661090E92352E10A006D7B6B /* Build configuration list for PBXProject "EXMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				661091002352E10C006D7B6B /* Debug */,
@@ -350,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		661091022352E10C006D7B6B /* Build configuration list for PBXNativeTarget "TestMemo" */ = {
+		661091022352E10C006D7B6B /* Build configuration list for PBXNativeTarget "EXMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				661091032352E10C006D7B6B /* Debug */,

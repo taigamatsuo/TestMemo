@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestMemo.xcodeproj">
+      location = "self:/Users/influencer17/Desktop/TestMemo/EXMemo.xcodeproj">
    </FileRef>
 </Workspace>

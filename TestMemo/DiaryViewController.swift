@@ -18,11 +18,42 @@ class DiaryViewController: UIViewController  {
     @IBOutlet var memoTextView: UITextView!
     
     var saveData : UserDefaults = UserDefaults.standard
-    
+    var datePicker: UIDatePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // ピッカー設定
+               datePicker.datePickerMode = UIDatePicker.Mode.date
+               datePicker.timeZone = NSTimeZone.local
+               datePicker.locale = Locale.current
+               dateTextField.inputView = datePicker
+
+               // 決定バーの生成
+               let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 35))
+               let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+               let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+               toolbar.setItems([spacelItem, doneItem], animated: true)
+
+               // インプットビュー設定(紐づいているUITextfieldへ代入)
+               dateTextField.inputView = datePicker
+               dateTextField.inputAccessoryView = toolbar
+           }
+    // UIDatePickerのDoneを押したら発火
+    @objc func done() {
+        dateTextField.endEditing(true)
+
+        // 日付のフォーマット
+        let formatter = DateFormatter()
+
+        //"yyyy年MM月dd日"を"yyyy/MM/dd"したりして出力の仕方を好きに変更できるよ
+        formatter.dateFormat = "yyyy年MM月dd日"
+
+        //(from: datePicker.date))を指定してあげることで
+        //datePickerで指定した日付が表示される
+        dateTextField.text = "\(formatter.string(from: datePicker.date))"
+    }
     //userdefaultsから読み込む
 //        nameTextField.text = saveData.object(forKey: "name") as? String
 //        dateTextField.text = saveData.object(forKey: "date") as? String
@@ -30,7 +61,7 @@ class DiaryViewController: UIViewController  {
 //        gohannTextField.text = saveData.object(forKey: "gohann") as? String
 //        suiminnTextField.text = saveData.object(forKey: "suiminn") as? String
 //        memoTextView.text = saveData.object(forKey: "memo") as? String
-    }
+    
 
     
     //saveボタンが押された時
@@ -51,11 +82,11 @@ class DiaryViewController: UIViewController  {
     @IBAction func save(_ sender: Any) {
 
         let inputText = memoTextView.text
-        let inputText2 = nameTextField.text
+//        let inputText2 = nameTextField.text
         let inputText3 = dateTextField.text
-        let inputText4 = taityouTextField.text
-        let inputText5 = gohannTextField.text
-        let inputText6 = suiminnTextField.text
+//        let inputText4 = taityouTextField.text
+//        let inputText5 = gohannTextField.text
+//        let inputText6 = suiminnTextField.text
 
         let ud = UserDefaults.standard
         if ud.array(forKey: "memoArray") != nil{
@@ -65,8 +96,9 @@ class DiaryViewController: UIViewController  {
 
 
                 //テキストに何か書かれているか？
-            if inputText3 != ""{
+            if inputText != ""{
                 //配列に追加(Dateに表示される)
+                //saveMemoArray.append(inputText!)
                 saveMemoArray.append(inputText3!)
                 ud.set(saveMemoArray, forKey: "memoArray")
             
@@ -101,4 +133,5 @@ class DiaryViewController: UIViewController  {
 
         self.present(alert, animated: true, completion:nil)
     }
+
 }

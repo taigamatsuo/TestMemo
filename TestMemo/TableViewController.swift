@@ -85,6 +85,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
            let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
                                       reuseIdentifier: "aaa\(indexPath.section)-\(indexPath.row)")
           cell.textLabel?.text = " 名前"
+        cell.backgroundColor = UIColor.systemTeal
            cell.detailTextLabel?.text = "\(indexPath.row + 1)番"
            //cell.detailTextLabel?.numberOfLines = 0
            //cell.detailTextLabel?.text = textArry[indexPath.row]

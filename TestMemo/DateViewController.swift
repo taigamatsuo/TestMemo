@@ -25,6 +25,7 @@ class DateViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toDate", for: indexPath)
         cell.textLabel?.text = memoArray[indexPath.row]
+        cell.backgroundColor = UIColor.systemTeal
         return cell
     }
 
