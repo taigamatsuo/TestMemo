@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     let textArry: NSMutableArray = [
-    "1番めのセル","2番めのセル","3番めのセル"]
+    "1番めのセル","2番めのセル","3番めのセル","4番目のセル"]
     @IBOutlet var myTableView: UITableView!
     @IBOutlet var addButton: UIBarButtonItem!
     
@@ -84,7 +84,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
            print("セルの値を入れていく")
            let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
                                       reuseIdentifier: "aaa\(indexPath.section)-\(indexPath.row)")
-          cell.textLabel?.text = " 名前"
+          cell.textLabel?.text = "名前を入力してください"
         cell.backgroundColor = UIColor.systemTeal
            cell.detailTextLabel?.text = "\(indexPath.row + 1)番"
            //cell.detailTextLabel?.numberOfLines = 0
